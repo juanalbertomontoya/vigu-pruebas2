@@ -1,0 +1,27 @@
+.agua-prueba {
+  width: 500px;
+  height: 500px;
+  background: url(img/vectoragua.svg);
+  background-size: 500px;
+  background-repeat: repeat-x;
+  animation: animate 10s linear forwards infinite;
+  border-radius: 50%;
+}
+
+@keyframes animate {
+  0% {
+    background-position: 0 500px;
+  }
+  10% {
+    background-position: 0 500px;
+  }
+  40% {
+    background-position: 2000px 250px;
+  }
+  80% {
+    background-position: 5000px 0;
+  }
+  100% {
+    background-position: 6000px -100px;
+  }
+}
