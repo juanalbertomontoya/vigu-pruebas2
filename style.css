@@ -26,6 +26,16 @@
 
 body {
   background: white;
+  cursor: none;
+}
+
+*:hover {
+  cursor: none;
+}
+
+section {
+  background: white;
+  z-index: -100;
 }
 
 h1 {
@@ -48,14 +58,18 @@ strong {
   font-family: 'Barlow Bold', sans-serif;
 }
 
-
-
 .separador {
   margin-left: 50%;
   transform: translateX(-50%);
   width: 100px;
   height: 4px;
   background: #d9d9d9;
+}
+
+*::selection {
+  background:#27d100;
+  color: white;
+  text-shadow: 1px 1px #000000;
 }
 
 /* Estilos del Menu principal */
@@ -68,10 +82,6 @@ strong {
   background-color: white;
 }
 
-.menu-principal .scroll {
-  background-color: red;
-}
-
 .menu-principal-container {
   position: relative;
   width: auto;
@@ -80,10 +90,6 @@ strong {
   display: flex;
   flex-direction: row;
   
-}
-
-.menu-principal-container.scroll {
-  margin: 15px 90px; 
 }
 
 .menu-principal-logo {
@@ -107,16 +113,15 @@ strong {
   width: 50px;
 }
 
-.menu-principal-botones ul {
+.menu-principal-botones > ul {
   display: flex;
   flex-direction: row;
 }
 
-.menu-principal-botones ul li {
+.menu-principal-botones > ul > li {
   display: flex;
   align-self: center;
   margin-left: 25px;
-  cursor: pointer;
   position: relative;
 }
 
@@ -137,7 +142,7 @@ strong {
 
 
 
-.boton-menu-principal div {
+.boton-menu-principal > div {
   display: flex;
   align-self: center;
   text-decoration: none;
@@ -150,19 +155,19 @@ strong {
   position: relative;
 }
 
-#contactanos div {
+#contactanos > div {
   border-style: solid;
   border-width: 2px;
   border-color: #000000;
   transition: border-color 0.5s;
 }
 
-#contactanos div:hover {
+#contactanos > div:hover {
   border-color: #27d100;
   transition: border-color 0.5s;
 }
 
-#instagram div {
+#instagram > div {
   width: 20px;
   height: 20px;
   border-style: solid;
@@ -173,7 +178,7 @@ strong {
   transition: all 0.5s;
 }
 
-#instagram div:hover {
+#instagram > div:hover {
   border-color: #27d100;
   background: #27d100;
   transition: all 0.5s;
@@ -200,9 +205,7 @@ strong {
   width: 100%;
 }
 
-a:hover ~ .cursor {
-  transform: scale(4);
-}
+
 
 .cursor {
   z-index: 1000;
@@ -210,11 +213,15 @@ a:hover ~ .cursor {
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  background: black;
+  background: white;
   transition: 0.1s;
   transform: translate(-50%,-50%);
   pointer-events: none;
   mix-blend-mode: difference;
+}
+
+.cursor.cursor-hover {
+  transform: scale(4);
 }
 
 
@@ -234,7 +241,7 @@ a:hover ~ .cursor {
   letter-spacing: 0.15em;
   opacity: 0;
   transform: translateX(-10%);
-  transition: all 0.5s ease-in-out; 
+  transition: all 0.5s ease-in-out;
 }
 
 section.active > div > div > div.titulo-introduccion > h1 {
@@ -434,6 +441,10 @@ section.active > div > div > div > div.servicios-desarrollo > h2 {
   background: #ffffff;
 }
 
+#recibe .on {
+  color: #27d100;
+}
+
 .servicios p span {
   position: absolute;
   right: 0;
@@ -531,7 +542,18 @@ section.active > div > div > div > div > div.servicios1 p:nth-child(2) span {
   width: auto;
   height: 450px;
   margin: 0 55px 0 15px;
+  opacity: 0;
+  transform: translateX(-25%);
+  transition: all 0.5s ease-in-out;
 }
+
+section.active > div > div > div > .corchete-svg {
+  opacity: 1;
+  transform: translateX(0);
+  transition: all 1s ease-in-out 1.2s;
+}
+
+
 
 .atrae {
   align-self: center;
@@ -542,16 +564,29 @@ section.active > div > div > div > div > div.servicios1 p:nth-child(2) span {
   height: 324px;
 }
 
-.atrae-texto h1 {
+.atrae-texto > div > h1 {
   font-size: 108px;
   letter-spacing: 0.12em;
   font-family: 'Barlow Bold', sans-serif; 
-  color: #000000;
+  color: transparent;
   transition: all 0.5s ease-in-out;
   position: relative;
+  display: table;
 }
 
-.atrae-texto h1:nth-child(1):before {
+.atrae1 {
+  opacity: 0;
+  transform: translateY(-20%);
+  transition: all 0.5s ease-in-out;
+}
+
+section.active > div > div > div > div > div > div.atrae1 {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 1s ease-in-out 1.2s;
+}
+
+.atrae-texto > div.atrae1 > h1:before {
   position: absolute;
   z-index: -1;
   left: 0;
@@ -562,7 +597,20 @@ section.active > div > div > div > div > div.servicios1 p:nth-child(2) span {
   color: #000000;
 }
 
-.atrae-texto h1:nth-child(2):before {
+
+.atrae2 {
+  opacity: 0;
+  transform: translateX(10%);
+  transition: all 0.5s ease-in-out;
+}
+
+section.active > div > div > div > div > div > div.atrae2 {
+  opacity: 1;
+  transform: translateX(0);
+  transition: all 1s ease-in-out 1.2s;
+}
+
+.atrae-texto > div.atrae2 > h1:before {
   position: absolute;
   z-index: -1;
   left: 0;
@@ -573,7 +621,20 @@ section.active > div > div > div > div > div.servicios1 p:nth-child(2) span {
   color: #000000;
 }
 
-.atrae-texto h1:nth-child(3):before {
+
+.atrae3 {
+  opacity: 0;
+  transform: translateY(20%);
+  transition: all 0.5s ease-in-out;
+}
+
+section.active > div > div > div > div > div > div.atrae3 {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 1s ease-in-out 1.2s;
+}
+
+.atrae-texto > div.atrae3 > h1:before {
   position: absolute;
   z-index: -1;
   left: 0;
@@ -585,7 +646,6 @@ section.active > div > div > div > div > div.servicios1 p:nth-child(2) span {
 }
 
 .atrae-texto h1:hover {
-  cursor: pointer;
   color: transparent;
   background-image: url(img/vectoragua.svg);
   background-size: 150px;

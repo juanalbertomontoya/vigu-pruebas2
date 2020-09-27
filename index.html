@@ -9,14 +9,18 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="onepage-scroll.css">
   <script src="jquery.js"></script>
+  <script src="servicios-color.js"></script>
+  
   
 </head>
 <body>
-
+  <div class="cursor"></div>
   
     <header>
       <div class="menu-principal">
+        
         <div class="menu-principal-container">
+          
           <div class="menu-principal-logo">
             <a href="">
               <img class="vigu-logo" src="img/vigu-logo.svg" alt="">
@@ -41,7 +45,10 @@
       </div>
     </header>
 
-    
+  
+
+
+
   <div class="main">
 
       <section>
@@ -66,7 +73,7 @@
               <h1 class="titulo-servicios">SERVICIOS</h1>
 
               <div class="servicios-branding">
-                <h2>BRANDING & DISEÑO</h2>
+                <h2 id="recibe">BRANDING & DISEÑO</h2>
                 <div class="branding1"><p>Logo, <span>&#160;</span></p><p>Naming, <span>&#160;</span></p><p>Identidad Corporativa, <span>&#160;</span></p></div>
                 <div class="branding2"><p>Contenido Motion Graphics,<span>&#160;</span></p></div>
                 <div class="branding3"><p>Animaciones, <span>&#160;</span></p><p>Videos, <span>&#160;</span></p><p>Presentaciones.<span>&#160;</span></p></div>
@@ -79,14 +86,14 @@
 
             </div>
             <div class="corchete">
-              <img class="corchete-svg" src="img/corchete.svg" alt="">
+              <img class="corchete-svg" src="img/corchete.svg" alt="">                
             </div>
             <div class="atrae">
               <div class="atrae-container">
                 <div class="atrae-texto">
-                  <h1>ATRAE</h1>
-                  <h1>CAUTIVA</h1>
-                  <h1>CAPTA</h1>
+                  <div class="atrae1"><h1>ATRAE</h1></div>
+                  <div class="atrae2"><h1>CAUTIVA</h1></div>
+                  <div class="atrae3"><h1>CAPTA</h1></div>
                 </div>
               </div>
             </div>
@@ -162,18 +169,21 @@
 
   
 
-  <!-- <script>
+  <script>
     const cursor = document.querySelector('.cursor');
     document.addEventListener('mousemove', (e) => {
       cursor.style.left = e.pageX + 'px';
       cursor.style.top = e.pageY + 'px';
     })
-  </script> -->
+  </script>
   
   
   <script src="onepagescroll.min.js"></script>
   <script>onePageScroll(".main");</script>
   <script src="anima-menu.js"></script>
+  <script src="anima-cursor.js"></script>
+
+  
   
   
 </body>
