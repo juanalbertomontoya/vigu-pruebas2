@@ -110,6 +110,10 @@ body {
   cursor: none;
 }
 
+section > div:not(.slime) {
+  margin: 131px 160px 0 160px;
+}
+
 *:hover {
   cursor: none;
 }
@@ -303,7 +307,6 @@ strong {
 
 .introduccion {
   width: auto;
-  margin: 150px 160px 0 160px;
 }
 
 .introduccion-container {
@@ -401,12 +404,11 @@ section.active > div > div > div.titulo-introduccion h2 span:before {
 }
 
 .descripcion-introduccion p {
-  margin-top: 80px;
+  margin: 80px 0 150px 190px;
   margin-bottom: 150px;
   text-align: right;
   right: 0;
   font-size: 24px;
-  margin-left: 190px;
   letter-spacing: 0.12em;
   line-height: 1.22em;
   opacity: 0;
@@ -447,20 +449,21 @@ section.active > div > div > div.descripcion-introduccion > p {
 
 /* Estilos de la servicios y cautiva */
 
+
 .servicios-atrae {
   width: auto;
   height: auto;
-  margin: 150px 160px 0 160px;
+  display: flex;
+  justify-content: center;
 }
 
 .servicios-atrae-container {
-  width: auto;
   display: flex;
   flex-direction: row;
 }
 
 .servicios {
-  width: 455px;
+  width: auto;
   align-self: center;
 }
 
@@ -692,6 +695,12 @@ div.branding1 > p {
   transition: 0.5s;
 }
 
+.corchete {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .corchete-svg {
   width: auto;
   height: 450px;
@@ -703,7 +712,7 @@ div.branding1 > p {
 
 section.active > div > div > div > .corchete-svg {
   opacity: 1;
-  transform: translateX(0);
+  transform: translateX(0) rotate(0);
   transition: all 1s ease-in-out 1.2s;
 }
 
@@ -711,10 +720,7 @@ section.active > div > div > div > .corchete-svg {
   align-self: center;
 }
 
-.atrae-container {
-  width: 416px;
-  height: 324px;
-}
+
 
 .atrae-texto > div > h1 {
   font-size: 108px;
@@ -833,7 +839,6 @@ section.active > .slime > .slime-container {
 /* Estilos de la esfera negra */
 
 .esfera {
-  margin: 131px 160px 0 160px;
   width: auto;
   height: calc(100% - 131px);
   display: flex;
@@ -852,7 +857,7 @@ section.active > .slime > .slime-container {
   opacity: 0;
 }
 
-.esfera > img:not(.esfera-cards) {
+.esfera > img {
   animation: float 4s ease-in-out infinite;
 }
 
@@ -890,6 +895,7 @@ section.active > div > .esfera-cards {
   opacity: 1;
   transform: translate(0);
   transition: all 1.4s ease-in-out 3s;
+  animation: none;
 }
 
 section.active > div > .esfera-mobile {
@@ -911,6 +917,17 @@ section.active > div > .esfera-book-green {
   transition: all 1.4s ease-in-out 3s;
 }
 
+section.active > div > .esfera-monitor {
+  width: 250px;
+  top: auto;
+  left: calc(100% - 285px);
+  bottom: 0;
+  opacity: 1;
+  transform: translateX(0) translateY(0);
+  transition: all 1.4s ease-in-out 3s;
+  animation: none;
+}
+
 .esfera-container {
   transform: translateY(120%) scale(0.1);
   display: flex;
@@ -920,9 +937,10 @@ section.active > div > .esfera-book-green {
   flex-direction: column;
   width: 430px;
   height: 430px;
-  background: #000000;
-  color: transparent;
+  background: none;
   border-radius: 50%;
+  transform: translateY(120%) scale(0.1);
+  color: transparent;
 }
 
 @keyframes float {
@@ -945,18 +963,22 @@ section.active > div > div.esfera-container {
   0% {
     transform: translateY(120%) scale(0.1);
     color: transparent;
+    background: #000000;
   }
   33% {
     transform: translateY(0) scale(0.1);
     color: transparent;
+    background: #000000;
   }
   66% {
     transform: translateY(0) scale(1);
     color: transparent;
+    background: #000000;
   }
   100% {
     transform: translateY(0) scale(1);
     color: white;
+    background: #000000;
   }
 }
 
@@ -980,7 +1002,6 @@ section.active > div > div.esfera-container {
 
 .contactanos {
   width: auto;
-  margin: 131px 160px 0 160px;
 }
 
 .contactanos-container {
@@ -996,6 +1017,15 @@ section.active > div > div.esfera-container {
   margin-bottom: 20px;
   font-size: 84px;
   letter-spacing: 0.12em;
+  transform: translateX(-10%);
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+section.active > div.contactanos > div > h1 {
+  transform: translateX(0);
+  opacity: 1;
+  transition: all 1s ease-in-out 0.5s;
 }
 
 .contactanos a {
@@ -1006,7 +1036,15 @@ section.active > div > div.esfera-container {
   font-size: 40px;
   letter-spacing: 0.12em;
   margin-bottom: 30px;
-  transition: all 0.3s ease-in-out;
+  transform: translateX(10%);
+  opacity: 0;
+  transition: letter-spacing 0.3s ease-in-out, transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+section.active > div.contactanos > div > a {
+  transform: translateX(0);
+  opacity: 1;
+  transition: letter-spacing 0.3s ease-in-out, transform 1s ease-in-out 0.5s, opacity 1s ease-in-out 0.5s;
 }
 
 .contactanos a:hover {
@@ -1046,7 +1084,7 @@ section.active > div > div.esfera-container {
 #instagram-embed-0,
 #instagram-embed-1,
 #instagram-embed-2 {
-  margin-top: -27% !important;
+  margin-top: -28% !important;
   min-width: unset !important;
 }
 
@@ -1084,6 +1122,121 @@ footer {
   overflow: hidden;
 }
 
+@media (min-width: 1193px) and (max-width: 1353px) {
+  section > div:not(.slime) {
+    margin: 131px 80px 0 80px;
+  }
+}
+
+@media (max-width: 1192px) {
+  section > div:not(.slime) {
+    margin: 131px 80px 0 80px;
+  }
+
+  .titulo-introduccion h1 {
+    font-size: 65px;
+  }
+
+  .titulo-introduccion h1 span {
+    font-size: 95px;
+  }
+
+  section.active > div > div > div.titulo-introduccion > h1 > span {
+    font-size: 65px;
+  }
+
+  .titulo-introduccion h2 {
+    font-size: 65px;
+  }
+
+  .titulo-introduccion h2 span {
+    font-size: 35px;
+  }
+
+  .descripcion-introduccion p {
+    margin: 80px 0 125px 190px;
+  }  
+
+  section.active > div > div > div.titulo-introduccion > h2 > span {
+    font-size: 65px;
+  }
+
+  .servicios h1 {
+    font-size: 37.8px;
+  }
+
+  .servicios h2 {
+    font-size: 37.8px;
+  }
+
+  .servicios p {
+    font-size: 22.8px;
+  }
+
+  .corchete-svg {
+    width: auto;
+    height: 387px;
+    margin: 0 45px 0 5px;
+  }
+
+  .atrae-texto > div > h1 {
+    font-size: 93px;
+  }
+  
+  
+  section.active > div > .esfera-bag {
+    width: 11.47%;
+  }
+  
+  section.active > div > .esfera-sticker {
+    width: 11.47%;
+  }
+  
+  section.active > div > .esfera-book-yellow {
+    width: 7.65%;
+  }
+  
+  section.active > div > .esfera-cards {
+    width: 23.90%;
+  }
+  
+  section.active > div > .esfera-mobile {
+    width: 11.47%;
+    left: calc(92% - 80px);
+  }
+  
+  section.active > div > .esfera-book-green {
+    width: 11.47%;
+    left: calc(100% - 80px);
+  }
+
+  section.active > div > .esfera-monitor {
+    width: 23.90%;
+    left: calc(100% - 205px);
+  }
+
+
+}
+
+@media (max-width: 1038px) {
+
+  .servicios-atrae-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .corchete-svg {
+    transform: rotate(90deg);
+  }
+
+  section.active > div > div > div > .corchete-svg {
+    width: 82px;
+    transform-origin: center center;
+    transform: rotate(90deg);
+  }
+
+}
+
 @media (min-width: 1367px) {
   .main section:first-child:not(.slime) {
     width: 1366px;
@@ -1091,7 +1244,7 @@ footer {
     margin: auto;
   }
 
-  .main section > div:not(.slime) {
+  .main section > div:not(.slime):not(.esfera) {
     height: 100%;
     margin-top: 0;
     margin-bottom: 0;
@@ -1103,6 +1256,86 @@ footer {
   .main section > div > div:not(.slime-container) {
     align-self: center;
   }
+
+  .esfera {
+    width: 1043px;
+    margin-top: 131px;
+  }
+
+  section.active > div > .esfera-bag {
+    width: 11.47%;
+    top: 0;
+    left: 0;
+    opacity: 1;
+    transition: all 1.4s ease-in-out 3s;
+  }
+  
+  section.active > div > .esfera-sticker {
+    width: 11.47%;
+    top: 10.51%;
+    left: 6.69%;
+    opacity: 1;
+    transition: all 1.4s ease-in-out 3s;
+    animation-delay: 0.5s;
+  }
+  
+  section.active > div > .esfera-book-yellow {
+    width: 7.65%;
+    top: 4.02%;
+    left: 13.38%;
+    opacity: 1;
+    transition: all 1.4s ease-in-out 3s;
+    animation-delay: 1s;
+  }
+  
+  section.active > div > .esfera-cards {
+    width: 23.90%;
+    top: auto;
+    left: 0;
+    bottom: 0;
+    opacity: 1;
+    transform: translate(0);
+    transition: all 1.4s ease-in-out 3s;
+    animation: none;
+  }
+  
+  section.active > div > .esfera-mobile {
+    width: 11.47%;
+    top: 0;
+    left: calc(92% - 160px);
+    right: 0;
+    opacity: 1;
+    transition: all 1.4s ease-in-out 3s;
+    animation-delay: 0.5s;
+  }
+  
+  section.active > div > .esfera-book-green {
+    width: 11.47%;
+    top: 4.78%;
+    left: calc(100% - 160px);
+    right: 0;
+    opacity: 1;
+    transition: all 1.4s ease-in-out 3s;
+  }
+
+  section.active > div > .esfera-monitor {
+    width: 23.90%;
+    top: auto;
+    left: calc(100% - 320px);
+    bottom: 0;
+    opacity: 1;
+    transform: translate(0);
+    transition: all 1.4s ease-in-out 3s;
+    animation: none;
+  }
+  
+
+  #instagram-embed-0,
+  #instagram-embed-1,
+  #instagram-embed-2 {
+  margin-top: -23% !important;
+  min-width: unset !important;
+}
 }
 
 @media (min-height: 868px) {
@@ -1120,6 +1353,15 @@ footer {
 
   .slime-container > h3 {
     transform: scale(1.2);
+  }
+
+  .esfera {
+    width: calc(100% - 320px);
+  }
+
+
+  section.active > div > div.esfera-container {
+    animation: esferaShow2 3s ease-in-out 0.5s forwards;
   }
 
   .contactanos-container {
@@ -1143,4 +1385,28 @@ footer {
     width: 260px;
     height: 260px;
   }
+
+  @keyframes esferaShow2 {
+    0% {
+      transform: translateY(120%) scale(0.1);
+      color: transparent;
+      background: #000000;
+    }
+    33% {
+      transform: translateY(0) scale(0.1);
+      color: transparent;
+      background: #000000;
+    }
+    66% {
+      transform: translateY(0) scale(1.7);
+      color: transparent;
+      background: #000000;
+    }
+    100% {
+      transform: translateY(0) scale(1.7);
+      color: white;
+      background: #000000;
+    }
+  }
+  
 }

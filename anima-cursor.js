@@ -15,3 +15,18 @@ $("ul > li").hover(function () {
 $("#servicios-scroll > div > div > div.atrae > div > div > div > h1").hover(function () {
   $(".cursor").toggleClass("cursor-hover");
 });
+
+
+/* Agranda el cursor en las imagenes de la esfera */
+
+$("img").hover(function () {
+  $(".cursor").toggleClass("cursor-hover");
+});
+
+
+/* Agrnada el cursor en el correo */
+
+
+$("a").hover(function () {
+  $(".cursor").toggleClass("cursor-hover");
+});
