@@ -307,10 +307,14 @@ strong {
 
 .introduccion {
   width: auto;
+  height: calc(100% - 131px);
+  display: flex;
 }
 
 .introduccion-container {
   width: auto;
+  height: 393px;
+  align-self: center;
 }
 
 .titulo-introduccion h1 {
@@ -452,7 +456,7 @@ section.active > div > div > div.descripcion-introduccion > p {
 
 .servicios-atrae {
   width: auto;
-  height: auto;
+  height: calc(100% - 131px);
   display: flex;
   justify-content: center;
 }
@@ -460,6 +464,7 @@ section.active > div > div > div.descripcion-introduccion > p {
 .servicios-atrae-container {
   display: flex;
   flex-direction: row;
+  align-self: center;
 }
 
 .servicios {
@@ -517,7 +522,6 @@ section.active > div > div > div > div.servicios-desarrollo > h2 {
 
 .servicios p:hover {
   -webkit-text-stroke: 1px black;
-  text-shadow: 0px 0px 3px #000000;
 }
 
 .servicios p .barra-blanca {
@@ -696,21 +700,24 @@ div.branding1 > p {
 }
 
 .corchete {
+  margin: 0 55px 0 15px;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.corchete-svg {
-  width: auto;
-  height: 450px;
-  margin: 0 55px 0 15px;
   opacity: 0;
   transform: translateX(-25%);
   transition: all 0.5s ease-in-out;
 }
 
-section.active > div > div > div > .corchete-svg {
+.corchete-svg {
+  width: 96px;
+  height: 454px;
+  background: url(img/corchete.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+section.active > div > div > .corchete {
   opacity: 1;
   transform: translateX(0) rotate(0);
   transition: all 1s ease-in-out 1.2s;
@@ -727,8 +734,6 @@ section.active > div > div > div > .corchete-svg {
   letter-spacing: 0.12em;
   font-family: "Barlow Bold", sans-serif;
   transition: all 0.5s ease-in-out;
-  position: relative;
-  display: table;
 }
 
 .atrae1 {
@@ -809,27 +814,21 @@ section.active > div > div > div > div > div > div.atrae3 {
 
 .slime {
   width: 100%;
-  height: calc(100vh - 131px);
+  height: 100%;
   padding-top: 131px;
 }
 
 section > .slime > .slime-container {
   display: flex;
   justify-content: center;
-  width: auto;
-  height: calc(100vh - 131px);
+  width: 100%;
+  height: calc(100% - 131px);
   background-image: url(img/slime.png);
   background-size: cover;
-  border-radius: 50%;
-  transition: all 1.5s ease-in-out 0.5s;
-}
-
-section.active > .slime > .slime-container {
-  border-radius: 0;
-  transition: all 1.5s ease-in-out 0.5s;
 }
 
 .slime-container h3 {
+  width: 19em;
   font-size: 44px;
   text-align: center;
   align-self: center;
@@ -888,7 +887,7 @@ section.active > div > .esfera-book-yellow {
 }
 
 section.active > div > .esfera-cards {
-  width: 250px;
+  width: 166px;
   top: auto;
   left: 0;
   bottom: 0;
@@ -1002,17 +1001,21 @@ section.active > div > div.esfera-container {
 
 .contactanos {
   width: auto;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-top: 131px;
+  flex-direction: column;
 }
 
 .contactanos-container {
   width: auto;
   display: flex;
-  align-content: center;
   justify-content: center;
   flex-direction: column;
 }
 
-.contactanos h1 {
+.contactanos > div.contactanos-container > h1 {
   text-align: center;
   margin-bottom: 20px;
   font-size: 84px;
@@ -1022,7 +1025,7 @@ section.active > div > div.esfera-container {
   transition: all 0.5s ease-in-out;
 }
 
-section.active > div.contactanos > div > h1 {
+section.active > div.contactanos > div.contactanos-container > h1 {
   transform: translateX(0);
   opacity: 1;
   transition: all 1s ease-in-out 0.5s;
@@ -1092,19 +1095,19 @@ section.active > div.contactanos > div > a {
 
 footer {
   width: 100%;
-  height: 100%;
+  height: 100px;
 }
 
 .pie-de-pagina-container {
   width: auto;
   height: 100%;
-  margin: 30px 160px 0 160px;
   position: relative;
 }
 
 .pie-de-pagina-container h3 {
   position: absolute;
   right: 0;
+  bottom: 0;
   font-size: 30px;
   letter-spacing: 0.12em;
 }
@@ -1112,8 +1115,10 @@ footer {
 .pie-de-pagina-container h1 {
   position: absolute;
   left: 0;
+  bottom: 0;
   font-size: 26px;
   letter-spacing: 0.12em;
+  color: #000000;
 }
 
 /* Estilos de los section */
@@ -1129,6 +1134,7 @@ footer {
 }
 
 @media (max-width: 1192px) {
+
   section > div:not(.slime) {
     margin: 131px 80px 0 80px;
   }
@@ -1173,10 +1179,13 @@ footer {
     font-size: 22.8px;
   }
 
+  .corchete {
+    margin: 0 30px 0 0;
+  }
+
   .corchete-svg {
-    width: auto;
-    height: 387px;
-    margin: 0 45px 0 5px;
+    width: 82.58px;
+    height: 390px;
   }
 
   .atrae-texto > div > h1 {
@@ -1197,7 +1206,7 @@ footer {
   }
   
   section.active > div > .esfera-cards {
-    width: 23.90%;
+    width: 15.86%;
   }
   
   section.active > div > .esfera-mobile {
@@ -1218,22 +1227,221 @@ footer {
 
 }
 
-@media (max-width: 1038px) {
+@media (max-width: 1023px) {
 
   .servicios-atrae-container {
     display: flex;
     flex-direction: column;
   }
 
-  .corchete-svg {
-    transform: rotate(90deg);
+  .corchete {
+    margin: 0;
+    height: 82.58px;
   }
 
-  section.active > div > div > div > .corchete-svg {
-    width: 82px;
-    transform-origin: center center;
+  .corchete-svg {
     transform: rotate(90deg);
+    transform-origin: center;
   }
+
+  .atrae-texto > div > h1 {
+    text-align: center;
+  }
+
+  .slime-container h3 {
+    font-size: 34px;
+  }
+
+  .introduccion {
+    display: block;
+  }
+
+  .titulo-introduccion {
+    width: 32em;
+  }
+
+  .descripcion-introduccion p {
+    text-align: center;
+    margin: 50px 0;
+  }
+
+  .cuadros-container {
+    grid-template-columns: none;
+    grid-template-rows: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 720px) {
+
+  section > div:not(.slime) {
+    margin: 131px 50px 0 50px;
+  }
+
+  .descripcion-introduccion p {
+    width: 459px;
+    margin: 50px auto;
+  }
+
+  .atrae-texto > div > h1 {
+    font-size: 73px;
+  }
+
+  .slime-container h3 {
+    font-size: 4.722vw;
+  }
+
+  section.active > div > .esfera-bag {
+    width: 22.47%;
+  }
+  
+  section.active > div > .esfera-sticker {
+    top: 50px;
+    left: 90px;
+    width: 14.47%;
+  }
+  
+  section.active > div > .esfera-book-yellow {
+    width: 14.65%;
+    top: 0;
+  }
+  
+  section.active > div > .esfera-cards {
+    width: 28.90%;
+  }
+  
+  section.active > div > .esfera-mobile {
+    width: 19.47%;
+    left: calc(92% - 100px);
+  }
+  
+  section.active > div > .esfera-book-green {
+    width: 13.47%;
+    top: 70px;
+    left: calc(100% - 80px);
+  }
+
+  section.active > div > .esfera-monitor {
+    width: 38.90%;
+    left: calc(100% - 38.9%);
+  }
+
+  @keyframes esferaShow {
+    0% {
+      transform: translateY(120%) scale(0.1);
+      color: transparent;
+      background: #000000;
+    }
+    33% {
+      transform: translateY(0) scale(0.1);
+      color: transparent;
+      background: #000000;
+    }
+    66% {
+      transform: translateY(0) scale(0.8);
+      color: transparent;
+      background: #000000;
+    }
+    100% {
+      transform: translateY(0) scale(0.8);
+      color: white;
+      background: #000000;
+    }
+  }
+  
+  .contactanos > div.contactanos-container > h1 {
+    font-size: 11.66vw;
+  }
+
+  .contactanos a {
+    font-size: 5.55vw;
+  }
+}
+
+@media (max-width: 628px) {
+  .menu-principal-container {
+    margin: 35px 35px;
+  }
+}
+
+@media (max-width: 560px)  {
+
+  .titulo-introduccion h1 {
+    font-size: 11.81vw;
+  }
+
+  .titulo-introduccion h1 span {
+    font-size: 17.27vw;
+  }
+
+  section.active > div > div > div.titulo-introduccion > h1 > span {
+    font-size: 11.81vw;
+  }
+
+  .titulo-introduccion h2 {
+    font-size: 11.81vw;
+  }
+  
+  .titulo-introduccion h2 span {
+    font-size: 6.36vw;
+  }
+
+  section.active > div > div > div.titulo-introduccion > h2 > span {
+    font-size: 11.81vw;
+  }
+
+  .descripcion-introduccion {
+    height: 100%;
+    display: flex;
+    align-content: center;
+  }
+
+  .descripcion-introduccion p {
+    margin: 0;
+    align-self: center;
+    width: 82.14vw;
+    height: 31.07vw;
+    font-size: 4.28vw;
+  }
+
+  .servicios h1 {
+    font-size: 7.77vw;
+    }
+  
+    .servicios h2 {
+      font-size: 7.77vw;
+    }
+  
+    .servicios p {
+      font-size: 4.55vw;
+    }
+    .corchete-svg {
+      width: 14.74vw2;
+      height: 69.64vw;
+  }
+
+}
+
+@media (max-width: 486px)  {
+
+  .menu-principal-container {
+    margin: 35px 20px;
+  }
+
+  .menu-principal-botones > ul > li {
+    margin-left: 2.05vw;
+  }
+
+  .boton-menu-principal {
+    font-size: 4.11vw;
+  }
+
+  .vigu-logo {
+    width: 20.57vw;
+  }
+
+  #instagram-img  {
+    width: 100%
+}
 
 }
 
@@ -1244,7 +1452,7 @@ footer {
     margin: auto;
   }
 
-  .main section > div:not(.slime):not(.esfera) {
+  .main section > div:not(.slime):not(.esfera):not(.contactanos) {
     height: 100%;
     margin-top: 0;
     margin-bottom: 0;
@@ -1289,7 +1497,7 @@ footer {
   }
   
   section.active > div > .esfera-cards {
-    width: 23.90%;
+    width: 15.86%;
     top: auto;
     left: 0;
     bottom: 0;
@@ -1333,13 +1541,11 @@ footer {
   #instagram-embed-0,
   #instagram-embed-1,
   #instagram-embed-2 {
-  margin-top: -23% !important;
+  margin-top: -22% !important;
   min-width: unset !important;
 }
-}
 
-@media (min-height: 868px) {
-  .esfera-container {
+.esfera-container {
     transform: scale(1.6);
   }
 
@@ -1364,6 +1570,11 @@ footer {
     animation: esferaShow2 3s ease-in-out 0.5s forwards;
   }
 
+  .contactanos {
+    height: 100vh;
+    margin: 0;
+  }
+
   .contactanos-container {
     transform: scale(1.2);
     width: 1200px;
@@ -1377,7 +1588,7 @@ footer {
     margin-bottom: 60px;
   }
 
-  .contactanos h1 {
+  .contactanos > div.contactanos-container > h1 {
     margin-bottom: 40px;
   }
 
