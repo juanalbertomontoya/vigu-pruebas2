@@ -1616,8 +1616,15 @@ footer {
 
   section > div:not(.slime) {
     margin: 121px 40px 0 40px;
-}
-
+  }
+  
+  .pie-de-pagina-container h1 {
+    font-size: 5.34vw;
+  }
+  
+  .pie-de-pagina-container h3 {
+    font-size: 6.17vw;
+  }
 }
 
 @media (min-width: 1367px) {
