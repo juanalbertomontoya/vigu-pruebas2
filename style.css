@@ -1162,7 +1162,7 @@ footer {
   .descripcion-introduccion p {
     margin: 80px 0 125px 190px;
     position: absolute;
-    bottom: 20px;
+    bottom: 50px;
     left: 0;
   } 
   
@@ -1479,6 +1479,13 @@ footer {
 }
 
 
+@media (max-height: 720px) {
+  
+  .atrae-texto > div > h1 {
+    font-size: 7vh;
+  }
+}
+
 @media (max-width: 581px) {
   .titulo-introduccion {
     width: 100%;
@@ -1525,24 +1532,21 @@ footer {
 
   .servicios h1 {
     font-size: 7.77vw;
-    }
+  }
   
     .servicios h2 {
       font-size: 7.77vw;
-    }
+  }
   
     .servicios p {
       font-size: 4.55vw;
-    }
+  }
     .corchete-svg {
       width: 15.26vw;
       height: 69.64vw;
       background-size: auto;
   }
   
-  .atrae-texto > div > h1 {
-    font-size: 9vh;
-  }
 
   .esfera-container {
     width: 72.42vw;
