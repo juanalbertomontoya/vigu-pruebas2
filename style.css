@@ -1099,7 +1099,7 @@ footer {
   width: 100%;
   height: 100px;
   position: absolute;
-  bottom: 0;
+  bottom: 50px;
 }
 
 .pie-de-pagina-container {
@@ -1386,6 +1386,15 @@ footer {
 
   .cuadros-container div:nth-child(3) {
     display: none;
+  }
+  
+  .contactanos-container {
+    width: auto;
+    display: flex;
+    justify-content: none;
+    flex-direction: column;
+    height: calc(100vh - 131px);
+    position: relative;
   }
 }
 
