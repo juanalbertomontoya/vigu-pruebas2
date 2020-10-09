@@ -1099,7 +1099,7 @@ footer {
   width: 100%;
   height: 100px;
   position: absolute;
-  bottom: 50px;
+  bottom: 20px;
 }
 
 .pie-de-pagina-container {
@@ -1396,6 +1396,12 @@ footer {
     height: calc(100vh - 131px);
     position: relative;
   }
+  footer {
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  bottom: 50px;
+}
 }
 
 @media (max-width: 720px) {
