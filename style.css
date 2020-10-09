@@ -1161,13 +1161,21 @@ footer {
 
   .descripcion-introduccion p {
     margin: 80px 0 125px 190px;
+    position: absolute;
+    bottom: 20px;
+    left: 0;
   } 
   
   .introduccion-container {
     width: auto;
-    height: 100%;
+    height: calc(100vh - 131px);
     align-self: center;
-}
+    position: relative;
+  }
+
+  .servicios-atrae-container {
+    height: calc(100vh - 131px);
+  }
 
   section.active > div > div > div.titulo-introduccion > h2 > span {
     font-size: 65px;
@@ -1235,9 +1243,6 @@ footer {
 
 @media (max-width: 1023px) {
 
-  .descripcion-introduccion {
-    margin-top: 30vh;
-  }
 
   .servicios-atrae-container {
     display: flex;
@@ -1396,7 +1401,7 @@ footer {
   }
 
   .slime-container h3 {
-    font-size: 4.722vw;
+    font-size: 4vw;
   }
 
   section.active > div > .esfera-bag {
@@ -1515,7 +1520,7 @@ footer {
     margin: 0;
     width: 82.14vw;
     height: 31.07vw;
-    font-size: 4.28vw;
+    font-size: 4vw;
   }
 
   .servicios h1 {
@@ -1536,7 +1541,7 @@ footer {
   }
   
   .atrae-texto > div > h1 {
-    font-size: 9.78vh;
+    font-size: 9vh;
   }
 
   .esfera-container {
