@@ -709,18 +709,18 @@ div.branding1 > p {
   transition: all 0.5s ease-in-out;
 }
 
+section.active > div > div > .corchete {
+  opacity: 1;
+  transform: translateX(0) rotate(0);
+  transition: all 1s ease-in-out 1.2s;
+}
+
 .corchete-svg {
   width: 96px;
   height: 454px;
   background: url(img/corchete.svg);
   background-size: 100%;
   background-repeat: no-repeat;
-}
-
-section.active > div > div > .corchete {
-  opacity: 1;
-  transform: translateX(0) rotate(0);
-  transition: all 1s ease-in-out 1.2s;
 }
 
 .atrae {
@@ -1161,7 +1161,13 @@ footer {
 
   .descripcion-introduccion p {
     margin: 80px 0 125px 190px;
-  }  
+  } 
+  
+  .introduccion-container {
+    width: auto;
+    height: 100%;
+    align-self: center;
+}
 
   section.active > div > div > div.titulo-introduccion > h2 > span {
     font-size: 65px;
@@ -1229,6 +1235,10 @@ footer {
 
 @media (max-width: 1023px) {
 
+  .descripcion-introduccion {
+    margin-top: 30vh;
+  }
+
   .servicios-atrae-container {
     display: flex;
     flex-direction: column;
@@ -1237,12 +1247,99 @@ footer {
   .corchete {
     margin: 0;
     height: 82.58px;
+    opacity: 0;
+    transform: translateY(-30%);
+    transition: all 0.5s ease-in-out;
+  }
+  
+  section.active > div > div > .corchete {
+    opacity: 1;
+    transform: translateY(0) rotate(0);
+    transition: all 1s ease-in-out 1.2s;
   }
 
   .corchete-svg {
     transform: rotate(90deg);
     transform-origin: center;
   }
+
+  .atrae-texto h1 {
+    animation: atraeAnima 5s ease-in-out infinite;
+  }
+
+
+  .atrae2 h1 {
+    animation-delay: 0.25s;
+  }
+
+  .atrae3 h1 {
+    animation-delay: 0.5s;
+  }
+
+  .atrae1 {
+    opacity: 0;
+    transform: translateX(-20%);
+    transition: all 0.5s ease-in-out;
+  }
+  
+  section.active > div > div > div > div > div > div.atrae1 {
+    opacity: 1;
+    transform: translateX(0);
+    transition: all 1s ease-in-out 1.2s;
+  }
+  
+  .atrae2 {
+    opacity: 0;
+    transform: translateX(10%);
+    transition: all 0.5s ease-in-out;
+  }
+  
+  section.active > div > div > div > div > div > div.atrae2 {
+    opacity: 1;
+    transform: translateX(0);
+    transition: all 1s ease-in-out 1.2s;
+  }
+  
+  .atrae3 {
+    opacity: 0;
+    transform: translateX(20%);
+    transition: all 0.5s ease-in-out;
+  }
+  
+  section.active > div > div > div > div > div > div.atrae3 {
+    opacity: 1;
+    transform: translateX(0);
+    transition: all 1s ease-in-out 1.2s;
+  }
+  
+  @keyframes atraeAnima {
+    0% {
+      transform: translate(0, 0);
+      color: #000000;
+      text-shadow: none;
+    }
+
+    16.66% {
+    transform: translate(-8px, -8px);
+    color: #27d100;
+    text-shadow: 1px 1px 0 #1a8f00, 2px 2px 0 #1a8f00, 3px 3px 0 #1a8f00,
+      4px 4px 0 #1a8f00, 5px 5px 0 #1a8f00, 6px 6px 0 #1a8f00, 7px 7px 0 #1a8f00,
+      8px 8px 0 #1a8f00, 1px 1px 0 #1a8f00, 9px 12px 12px rgba(0, 0, 0, 0.5);
+    }
+
+    33.33% {
+      transform: translate(0, 0);
+      color: #000000;
+      text-shadow: none;
+    }
+
+    100% {
+      transform: translate(0, 0);
+      color: #000000;
+      text-shadow: none;
+    }
+    }
+
 
   .atrae-texto > div > h1 {
     text-align: center;
@@ -1273,8 +1370,20 @@ footer {
 
 @media (max-width: 720px) {
 
+  .cursor {
+    display: none;
+  }
+
   section > div:not(.slime) {
     margin: 131px 50px 0 50px;
+  }
+
+  .slime {
+    padding-top: 111px;
+  }
+  
+  section > .slime > .slime-container {
+    height: calc(100% - 111px);
   }
 
   .descripcion-introduccion p {
@@ -1295,13 +1404,14 @@ footer {
   }
   
   section.active > div > .esfera-sticker {
-    top: 50px;
-    left: 90px;
+    top: 8.84%;
+    left: 14.51%;
     width: 14.47%;
   }
   
   section.active > div > .esfera-book-yellow {
     width: 14.65%;
+    left: 22.58%;
     top: 0;
   }
   
@@ -1311,13 +1421,13 @@ footer {
   
   section.active > div > .esfera-mobile {
     width: 19.47%;
-    left: calc(92% - 100px);
+    left: calc(92% - 16.12%);
   }
   
   section.active > div > .esfera-book-green {
     width: 13.47%;
-    top: 70px;
-    left: calc(100% - 80px);
+    top: 12.38%;
+    left: calc(100% - 12.90%);
   }
 
   section.active > div > .esfera-monitor {
@@ -1363,44 +1473,46 @@ footer {
   }
 }
 
+
+@media (max-width: 581px) {
+  .titulo-introduccion {
+    width: 100%;
+  }
+ 
+   .titulo-introduccion h1 {
+     font-size: 10vw;
+   }
+ 
+   .titulo-introduccion h1 span {
+     font-size: 14vw;
+   }
+ 
+   section.active > div > div > div.titulo-introduccion > h1 > span {
+     font-size: 10vw;
+   }
+ 
+   .titulo-introduccion h2 {
+     font-size: 10vw;
+   }
+   
+   .titulo-introduccion h2 span {
+     font-size: 6vw;
+   }
+ 
+   section.active > div > div > div.titulo-introduccion > h2 > span {
+     font-size: 10vw;
+   }
+}
+
 @media (max-width: 560px)  {
- .titulo-introduccion {
-   width: 100%;
- }
 
-  .titulo-introduccion h1 {
-    font-size: 11.81vw;
+  section > div:not(.slime) {
+    margin: 131px 30px 1px 30px;
   }
-
-  .titulo-introduccion h1 span {
-    font-size: 17.27vw;
-  }
-
-  section.active > div > div > div.titulo-introduccion > h1 > span {
-    font-size: 11.81vw;
-  }
-
-  .titulo-introduccion h2 {
-    font-size: 11.81vw;
-  }
-  
-  .titulo-introduccion h2 span {
-    font-size: 6.36vw;
-  }
-
-  section.active > div > div > div.titulo-introduccion > h2 > span {
-    font-size: 11.81vw;
-  }
-
-  .descripcion-introduccion {
-    height: 100%;
-    display: flex;
-    align-content: center;
-  }
+ 
 
   .descripcion-introduccion p {
     margin: 0;
-    align-self: center;
     width: 82.14vw;
     height: 31.07vw;
     font-size: 4.28vw;
@@ -1422,7 +1534,24 @@ footer {
       height: 69.64vw;
       background-size: auto;
   }
+  
+  .atrae-texto > div > h1 {
+    font-size: 9.78vh;
+  }
 
+  .esfera-container {
+    width: 72.42vw;
+    height: 72.42vw;
+  }
+
+  .esfera-container h1 {
+    font-size: 7.5vw;
+  }
+
+  .esfera-container h2 {
+    margin-top: 3.03vw;
+    font-size: 3.03vw;
+  }
 
 }
 
@@ -1446,16 +1575,20 @@ footer {
 
   #instagram-img  {
     width: 100%
+  }
+  
+  .menu-principal-container {
+    margin: 25px 20px;
+  }
+
+  section > div:not(.slime) {
+    margin: 121px 40px 0 40px;
 }
 
 }
 
 @media (min-width: 1367px) {
-  .main section:first-child:not(.slime) {
-    width: 1366px;
-    height: 100vh;
-    margin: auto;
-  }
+
 
   .main section > div:not(.slime):not(.esfera):not(.contactanos) {
     height: 100%;
