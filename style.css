@@ -328,7 +328,7 @@ strong {
 section.active > div > div > div.titulo-introduccion > h1 {
   transform: translateX(0);
   opacity: 1;
-  transition: all 1s ease-in-out 0.5s;
+  transition: all 1s ease-in-out 1s;
 }
 
 .titulo-introduccion h1 span {
@@ -341,7 +341,7 @@ section.active > div > div > div.titulo-introduccion > h1 {
 section.active > div > div > div.titulo-introduccion > h1 > span {
   font-size: 80px;
   letter-spacing: 0.12em;
-  transition: all 1s ease-in-out 2.5s;
+  transition: all 1s ease-in-out 3s;
 }
 
 .titulo-introduccion h1 span:before {
@@ -358,7 +358,7 @@ section.active > div > div > div.titulo-introduccion > h1 > span {
 }
 
 section.active > div > div > div.titulo-introduccion h1 span:before {
-  animation: selectVerde 2.5s ease-in-out 1.5s;
+  animation: selectVerde 2.5s ease-in-out 2s;
   animation-fill-mode: forwards;
 }
 
@@ -373,7 +373,7 @@ section.active > div > div > div.titulo-introduccion h1 span:before {
 section.active > div > div > div.titulo-introduccion > h2 {
   transform: translateX(0);
   opacity: 1;
-  transition: all 1s ease-in-out 0.5s;
+  transition: all 1s ease-in-out 1s;
 }
 
 .titulo-introduccion h2 span {
@@ -384,7 +384,7 @@ section.active > div > div > div.titulo-introduccion > h2 {
 }
 
 section.active > div > div > div.titulo-introduccion > h2 > span {
-  transition: all 1s ease-in-out 4.5s;
+  transition: all 1s ease-in-out 5s;
   font-size: 80px;
   letter-spacing: 0.12em;
 }
@@ -403,7 +403,7 @@ section.active > div > div > div.titulo-introduccion > h2 > span {
 }
 
 section.active > div > div > div.titulo-introduccion h2 span:before {
-  animation: selectVerde 2.5s ease-in-out 3.5s;
+  animation: selectVerde 2.5s ease-in-out 4s;
   animation-fill-mode: forwards;
 }
 
@@ -435,17 +435,17 @@ section.active > div > div > div.descripcion-introduccion > p {
     opacity: 0;
   }
   20% {
-    height: 80%;
+    height: 65%;
     width: 100%;
     opacity: 1;
   }
   80% {
-    height: 80%;
+    height: 65%;
     width: 100%;
     opacity: 1;
   }
   100% {
-    height: 80%;
+    height: 65%;
     width: 100%;
     opacity: 0;
   }
@@ -1097,13 +1097,12 @@ section.active > div.contactanos > div > a {
 
 footer {
   width: 100%;
-  height: 100px;
-  position: absolute;
-  bottom: 20px;
+  height: 20px;
+  margin-top: 20px;
 }
 
 .pie-de-pagina-container {
-  width: auto;
+  width: 100%;
   height: 100%;
   position: relative;
 }
@@ -1396,12 +1395,6 @@ footer {
     height: calc(100vh - 131px);
     position: relative;
   }
-  footer {
-  width: 100%;
-  height: 100px;
-  position: absolute;
-  bottom: 100px;
-}
 }
 
 @media (max-width: 720px) {
@@ -1543,7 +1536,7 @@ footer {
 @media (max-width: 560px)  {
 
   section > div:not(.slime) {
-    margin: 131px 30px 1px 30px;
+    margin: 21vh 30px 1px 30px;
   }
  
 
@@ -1585,6 +1578,7 @@ footer {
     margin-top: 3.03vw;
     font-size: 3.03vw;
   }
+
 
 }
 
