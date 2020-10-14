@@ -1510,7 +1510,7 @@ footer {
 @media (max-width: 581px) {
 
   section > div:not(.slime) {
-    margin: 100px 50px 0 50px;
+    margin: 115px 50px 0 50px;
   }
 
 
@@ -1546,7 +1546,7 @@ footer {
 @media (max-width: 560px)  {
 
   section > div:not(.slime) {
-    margin: 100px 30px 0 30px;
+    margin: 115px 30px 0 30px;
   }
 
   .descripcion-introduccion p {
@@ -1593,9 +1593,6 @@ footer {
 
 @media (max-width: 486px)  {
 
-  .menu-principal-container {
-    margin: 35px 20px;
-  }
 
   .menu-principal-botones > ul > li {
     margin-left: 5.5px;
