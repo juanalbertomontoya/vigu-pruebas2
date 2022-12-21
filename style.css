@@ -34,8 +34,7 @@ svg .svg-elem-1 {
   stroke-dashoffset: 2344.08251953125px;
   stroke-dasharray: 2344.08251953125px;
   fill: transparent;
-  transition: stroke-dashoffset 1.2s cubic-bezier(0.47, 0, 0.745, 0.715) 0s,
-    fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 1.4s;
+  transition: stroke-dashoffset 1.2s cubic-bezier(0.47, 0, 0.745, 0.715) 0s, fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 1.4s;
 }
 
 svg.active .svg-elem-1 {
@@ -47,8 +46,7 @@ svg .svg-elem-2 {
   stroke-dashoffset: 1190.1722412109375px;
   stroke-dasharray: 1190.1722412109375px;
   fill: transparent;
-  transition: stroke-dashoffset 1.2s cubic-bezier(0.47, 0, 0.745, 0.715) 0.2s,
-    fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 1.5s;
+  transition: stroke-dashoffset 1.2s cubic-bezier(0.47, 0, 0.745, 0.715) 0.2s, fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 1.5s;
 }
 
 svg.active .svg-elem-2 {
@@ -60,8 +58,7 @@ svg .svg-elem-3 {
   stroke-dashoffset: 2855.384033203125px;
   stroke-dasharray: 2855.384033203125px;
   fill: transparent;
-  transition: stroke-dashoffset 1.2s cubic-bezier(0.47, 0, 0.745, 0.715) 0.4s,
-    fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 1.5999999999999999s;
+  transition: stroke-dashoffset 1.2s cubic-bezier(0.47, 0, 0.745, 0.715) 0.4s, fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 1.5999999999999999s;
 }
 
 svg.active .svg-elem-3 {
@@ -73,9 +70,7 @@ svg .svg-elem-4 {
   stroke-dashoffset: 2659.71630859375px;
   stroke-dasharray: 2659.71630859375px;
   fill: transparent;
-  transition: stroke-dashoffset 1.2s cubic-bezier(0.47, 0, 0.745, 0.715)
-      0.6000000000000001s,
-    fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 1.7s;
+  transition: stroke-dashoffset 1.2s cubic-bezier(0.47, 0, 0.745, 0.715) 0.6000000000000001s, fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 1.7s;
 }
 
 svg.active .svg-elem-4 {
@@ -453,7 +448,6 @@ section.active > div > div > div.descripcion-introduccion > p {
 
 /* Estilos de la servicios y cautiva */
 
-
 .servicios-atrae {
   width: auto;
   height: calc(100% - 131px);
@@ -533,70 +527,35 @@ section.active > div > div > div > div.servicios-desarrollo > h2 {
   visibility: visible;
 }
 
-section.active
-  > div
-  > div
-  > div
-  > div
-  > div.branding1
-  p:nth-child(1)
-  span.barra-blanca {
+section.active > div > div > div > div > div.branding1 p:nth-child(1) span.barra-blanca {
   animation: escribe 0.4s linear;
   animation-fill-mode: forwards;
   animation-timing-function: steps(6);
   animation-delay: 2.1s;
 }
 
-section.active
-  > div
-  > div
-  > div
-  > div
-  > div.branding1
-  p:nth-child(2)
-  span.barra-blanca {
+section.active > div > div > div > div > div.branding1 p:nth-child(2) span.barra-blanca {
   animation: escribe 0.53s linear;
   animation-fill-mode: forwards;
   animation-timing-function: steps(8);
   animation-delay: 3s;
 }
 
-section.active
-  > div
-  > div
-  > div
-  > div
-  > div.branding1
-  p:nth-child(3)
-  span.barra-blanca {
+section.active > div > div > div > div > div.branding1 p:nth-child(3) span.barra-blanca {
   animation: escribe 1.53s linear;
   animation-fill-mode: forwards;
   animation-timing-function: steps(23);
   animation-delay: 4.03s;
 }
 
-section.active
-  > div
-  > div
-  > div
-  > div
-  > div.branding2
-  p:nth-child(1)
-  span.barra-blanca {
+section.active > div > div > div > div > div.branding2 p:nth-child(1) span.barra-blanca {
   animation: escribe 1.73s linear;
   animation-fill-mode: forwards;
   animation-timing-function: steps(26);
   animation-delay: 6.06s;
 }
 
-section.active
-  > div
-  > div
-  > div
-  > div
-  > div.branding3
-  p:nth-child(1)
-  span.barra-blanca {
+section.active > div > div > div > div > div.branding3 p:nth-child(1) span.barra-blanca {
   animation: escribe 0.86s linear;
   animation-fill-mode: forwards;
   animation-timing-function: steps(13);
@@ -607,14 +566,7 @@ section.active > div > div > div > div > div.branding3 p:nth-child(2) {
   margin-left: -1px;
 }
 
-section.active
-  > div
-  > div
-  > div
-  > div
-  > div.branding3
-  p:nth-child(2)
-  span.barra-blanca {
+section.active > div > div > div > div > div.branding3 p:nth-child(2) span.barra-blanca {
   animation: escribe 0.53s linear;
   animation-fill-mode: forwards;
   animation-timing-function: steps(8);
@@ -625,28 +577,14 @@ section.active > div > div > div > div > div.branding3 p:nth-child(3) {
   margin-left: -1px;
 }
 
-section.active
-  > div
-  > div
-  > div
-  > div
-  > div.branding3
-  p:nth-child(3)
-  span.barra-blanca {
+section.active > div > div > div > div > div.branding3 p:nth-child(3) span.barra-blanca {
   animation: escribe 1s linear;
   animation-fill-mode: forwards;
   animation-timing-function: steps(15);
   animation-delay: 10.68s;
 }
 
-section.active
-  > div
-  > div
-  > div
-  > div
-  > div.desarrollo1
-  p:nth-child(1)
-  span.barra-blanca {
+section.active > div > div > div > div > div.desarrollo1 p:nth-child(1) span.barra-blanca {
   animation: escribe 0.6s linear;
   animation-fill-mode: forwards;
   animation-timing-function: steps(9);
@@ -657,14 +595,7 @@ section.active > div > div > div > div > div.desarrollo1 p:nth-child(2) {
   margin-left: -1px;
 }
 
-section.active
-  > div
-  > div
-  > div
-  > div
-  > div.desarrollo1
-  p:nth-child(2)
-  span.barra-blanca {
+section.active > div > div > div > div > div.desarrollo1 p:nth-child(2) span.barra-blanca {
   animation: escribe 0.73s linear;
   animation-fill-mode: forwards;
   animation-timing-function: steps(11);
@@ -727,8 +658,6 @@ section.active > div > div > .corchete {
   align-self: center;
 }
 
-
-
 .atrae-texto > div > h1 {
   font-size: 108px;
   letter-spacing: 0.12em;
@@ -776,8 +705,7 @@ section.active > div > div > div > div > div > div.atrae3 {
   transform: translate(-8px, -8px);
   color: #27d100;
   transition: all 0.5s ease-in-out;
-  text-shadow: 1px 1px 0 #1a8f00, 2px 2px 0 #1a8f00, 3px 3px 0 #1a8f00,
-    4px 4px 0 #1a8f00, 5px 5px 0 #1a8f00, 6px 6px 0 #1a8f00, 7px 7px 0 #1a8f00,
+  text-shadow: 1px 1px 0 #1a8f00, 2px 2px 0 #1a8f00, 3px 3px 0 #1a8f00, 4px 4px 0 #1a8f00, 5px 5px 0 #1a8f00, 6px 6px 0 #1a8f00, 7px 7px 0 #1a8f00,
     8px 8px 0 #1a8f00, 1px 1px 0 #1a8f00, 9px 12px 12px rgba(0, 0, 0, 0.5);
 }
 
@@ -1137,7 +1065,6 @@ footer {
 }
 
 @media (max-width: 1192px) {
-
   section > div:not(.slime) {
     margin: 131px 80px 0 80px;
   }
@@ -1167,8 +1094,8 @@ footer {
     position: absolute;
     bottom: 100px;
     left: 0;
-  } 
-  
+  }
+
   .introduccion-container {
     width: auto;
     height: calc(100vh - 131px);
@@ -1208,45 +1135,40 @@ footer {
   .atrae-texto > div > h1 {
     font-size: 93px;
   }
-  
-  
+
   section.active > div > .esfera-bag {
     width: 11.47%;
   }
-  
+
   section.active > div > .esfera-sticker {
     width: 11.47%;
   }
-  
+
   section.active > div > .esfera-book-yellow {
     width: 7.65%;
   }
-  
+
   section.active > div > .esfera-cards {
     width: 15.86%;
   }
-  
+
   section.active > div > .esfera-mobile {
     width: 11.47%;
     left: calc(92% - 80px);
   }
-  
+
   section.active > div > .esfera-book-green {
     width: 11.47%;
     left: calc(100% - 80px);
   }
 
   section.active > div > .esfera-monitor {
-    width: 23.90%;
+    width: 23.9%;
     left: calc(100% - 205px);
   }
-
-
 }
 
 @media (max-width: 1023px) {
-
-
   .servicios-atrae-container {
     display: flex;
     flex-direction: column;
@@ -1258,7 +1180,7 @@ footer {
 
   .introduccion-container {
     align-self: none;
-  }  
+  }
 
   .corchete {
     margin: 0;
@@ -1267,7 +1189,7 @@ footer {
     transform: translateY(-30%);
     transition: all 0.5s ease-in-out;
   }
-  
+
   section.active > div > div > .corchete {
     opacity: 1;
     transform: translateY(0) rotate(0);
@@ -1283,7 +1205,6 @@ footer {
     animation: atraeAnima 5s ease-in-out infinite;
   }
 
-
   .atrae2 h1 {
     animation-delay: 0.25s;
   }
@@ -1297,37 +1218,37 @@ footer {
     transform: translateX(-20%);
     transition: all 0.5s ease-in-out;
   }
-  
+
   section.active > div > div > div > div > div > div.atrae1 {
     opacity: 1;
     transform: translateX(0);
     transition: all 1s ease-in-out 1.2s;
   }
-  
+
   .atrae2 {
     opacity: 0;
     transform: translateX(10%);
     transition: all 0.5s ease-in-out;
   }
-  
+
   section.active > div > div > div > div > div > div.atrae2 {
     opacity: 1;
     transform: translateX(0);
     transition: all 1s ease-in-out 1.2s;
   }
-  
+
   .atrae3 {
     opacity: 0;
     transform: translateX(20%);
     transition: all 0.5s ease-in-out;
   }
-  
+
   section.active > div > div > div > div > div > div.atrae3 {
     opacity: 1;
     transform: translateX(0);
     transition: all 1s ease-in-out 1.2s;
   }
-  
+
   @keyframes atraeAnima {
     0% {
       transform: translate(0, 0);
@@ -1336,11 +1257,10 @@ footer {
     }
 
     16.66% {
-    transform: translate(-8px, -8px);
-    color: #27d100;
-    text-shadow: 1px 1px 0 #1a8f00, 2px 2px 0 #1a8f00, 3px 3px 0 #1a8f00,
-      4px 4px 0 #1a8f00, 5px 5px 0 #1a8f00, 6px 6px 0 #1a8f00, 7px 7px 0 #1a8f00,
-      8px 8px 0 #1a8f00, 1px 1px 0 #1a8f00, 9px 12px 12px rgba(0, 0, 0, 0.5);
+      transform: translate(-8px, -8px);
+      color: #27d100;
+      text-shadow: 1px 1px 0 #1a8f00, 2px 2px 0 #1a8f00, 3px 3px 0 #1a8f00, 4px 4px 0 #1a8f00, 5px 5px 0 #1a8f00, 6px 6px 0 #1a8f00, 7px 7px 0 #1a8f00,
+        8px 8px 0 #1a8f00, 1px 1px 0 #1a8f00, 9px 12px 12px rgba(0, 0, 0, 0.5);
     }
 
     33.33% {
@@ -1354,8 +1274,7 @@ footer {
       color: #000000;
       text-shadow: none;
     }
-    }
-
+  }
 
   .atrae-texto > div > h1 {
     text-align: center;
@@ -1390,7 +1309,7 @@ footer {
   .cuadros-container div:nth-child(3) {
     display: none;
   }
-  
+
   .contactanos-container {
     width: auto;
     display: flex;
@@ -1402,7 +1321,6 @@ footer {
 }
 
 @media (max-width: 720px) {
-
   .cursor {
     display: none;
   }
@@ -1414,7 +1332,7 @@ footer {
   .slime {
     padding-top: 111px;
   }
-  
+
   section > .slime > .slime-container {
     height: calc(100% - 111px);
   }
@@ -1435,36 +1353,36 @@ footer {
   section.active > div > .esfera-bag {
     width: 22.47%;
   }
-  
+
   section.active > div > .esfera-sticker {
     top: 8.84%;
     left: 14.51%;
     width: 14.47%;
   }
-  
+
   section.active > div > .esfera-book-yellow {
     width: 14.65%;
     left: 22.58%;
     top: 0;
   }
-  
+
   section.active > div > .esfera-cards {
-    width: 28.90%;
+    width: 28.9%;
   }
-  
+
   section.active > div > .esfera-mobile {
     width: 19.47%;
     left: calc(92% - 16.12%);
   }
-  
+
   section.active > div > .esfera-book-green {
     width: 13.47%;
     top: 12.38%;
-    left: calc(100% - 12.90%);
+    left: calc(100% - 12.9%);
   }
 
   section.active > div > .esfera-monitor {
-    width: 38.90%;
+    width: 38.9%;
     left: calc(100% - 38.9%);
   }
 
@@ -1490,7 +1408,7 @@ footer {
       background: #000000;
     }
   }
-  
+
   .contactanos > div.contactanos-container > h1 {
     font-size: 11.66vw;
   }
@@ -1506,45 +1424,41 @@ footer {
   }
 }
 
-
 @media (max-width: 581px) {
-
   section > div:not(.slime) {
     margin: 115px 50px 0 50px;
   }
 
-
   .titulo-introduccion {
     width: 100%;
   }
- 
-   .titulo-introduccion h1 {
-     font-size: 10vw;
-   }
- 
-   .titulo-introduccion h1 span {
-     font-size: 14vw;
-   }
- 
-   section.active > div > div > div.titulo-introduccion > h1 > span {
-     font-size: 10vw;
-   }
- 
-   .titulo-introduccion h2 {
-     font-size: 10vw;
-   }
-   
-   .titulo-introduccion h2 span {
-     font-size: 6vw;
-   }
- 
-   section.active > div > div > div.titulo-introduccion > h2 > span {
-     font-size: 10vw;
-   }
+
+  .titulo-introduccion h1 {
+    font-size: 10vw;
+  }
+
+  .titulo-introduccion h1 span {
+    font-size: 14vw;
+  }
+
+  section.active > div > div > div.titulo-introduccion > h1 > span {
+    font-size: 10vw;
+  }
+
+  .titulo-introduccion h2 {
+    font-size: 10vw;
+  }
+
+  .titulo-introduccion h2 span {
+    font-size: 6vw;
+  }
+
+  section.active > div > div > div.titulo-introduccion > h2 > span {
+    font-size: 10vw;
+  }
 }
 
-@media (max-width: 560px)  {
-
+@media (max-width: 560px) {
   section > div:not(.slime) {
     margin: 115px 30px 0 30px;
   }
@@ -1559,20 +1473,19 @@ footer {
   .servicios h1 {
     font-size: 7.77vw;
   }
-  
-    .servicios h2 {
-      font-size: 7.77vw;
+
+  .servicios h2 {
+    font-size: 7.77vw;
   }
-  
-    .servicios p {
-      font-size: 4.55vw;
+
+  .servicios p {
+    font-size: 4.55vw;
   }
-    .corchete-svg {
-      width: 15.26vw;
-      height: 69.64vw;
-      background-size: auto;
+  .corchete-svg {
+    width: 15.26vw;
+    height: 69.64vw;
+    background-size: auto;
   }
-  
 
   .esfera-container {
     width: 72.42vw;
@@ -1587,13 +1500,9 @@ footer {
     margin-top: 3.03vw;
     font-size: 3.03vw;
   }
-
-
 }
 
-@media (max-width: 486px)  {
-
-
+@media (max-width: 486px) {
   .menu-principal-botones > ul > li {
     margin-left: 5.5px;
   }
@@ -1606,15 +1515,15 @@ footer {
     width: 56px;
   }
 
-  #instagram-img  {
-    width: 100%
+  #instagram-img {
+    width: 100%;
   }
 
   #instagram > div {
     width: 13px;
     height: 13px;
   }
-  
+
   .menu-principal-container {
     margin: 25px 20px;
   }
@@ -1622,185 +1531,8 @@ footer {
   .pie-de-pagina-container h1 {
     font-size: 5.34vw;
   }
-  
+
   .pie-de-pagina-container h3 {
     font-size: 6.17vw;
   }
-}
-
-@media (min-width: 1367px) {
-
-
-  .main section > div:not(.slime):not(.esfera):not(.contactanos) {
-    height: 100%;
-    margin-top: 0;
-    margin-bottom: 0;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-  }
-
-  .main section > div > div:not(.slime-container) {
-    align-self: center;
-  }
-  
-  .introduccion-container {
-    width: 1046px;
-  }
-
-  .esfera {
-    width: 1043px;
-    margin-top: 131px;
-  }
-
-  section.active > div > .esfera-bag {
-    width: 11.47%;
-    top: 0;
-    left: 0;
-    opacity: 1;
-    transition: all 1.4s ease-in-out 3s;
-  }
-  
-  section.active > div > .esfera-sticker {
-    width: 11.47%;
-    top: 10.51%;
-    left: 6.69%;
-    opacity: 1;
-    transition: all 1.4s ease-in-out 3s;
-    animation-delay: 0.5s;
-  }
-  
-  section.active > div > .esfera-book-yellow {
-    width: 7.65%;
-    top: 4.02%;
-    left: 13.38%;
-    opacity: 1;
-    transition: all 1.4s ease-in-out 3s;
-    animation-delay: 1s;
-  }
-  
-  section.active > div > .esfera-cards {
-    width: 15.86%;
-    top: auto;
-    left: 0;
-    bottom: 0;
-    opacity: 1;
-    transform: translate(0);
-    transition: all 1.4s ease-in-out 3s;
-    animation: none;
-  }
-  
-  section.active > div > .esfera-mobile {
-    width: 11.47%;
-    top: 0;
-    left: calc(92% - 160px);
-    right: 0;
-    opacity: 1;
-    transition: all 1.4s ease-in-out 3s;
-    animation-delay: 0.5s;
-  }
-  
-  section.active > div > .esfera-book-green {
-    width: 11.47%;
-    top: 4.78%;
-    left: calc(100% - 160px);
-    right: 0;
-    opacity: 1;
-    transition: all 1.4s ease-in-out 3s;
-  }
-
-  section.active > div > .esfera-monitor {
-    width: 23.90%;
-    top: auto;
-    left: calc(100% - 320px);
-    bottom: 0;
-    opacity: 1;
-    transform: translate(0);
-    transition: all 1.4s ease-in-out 3s;
-    animation: none;
-  }
-  
-
-  #instagram-embed-0,
-  #instagram-embed-1,
-  #instagram-embed-2 {
-  margin-top: -22% !important;
-  min-width: unset !important;
-}
-
-.esfera-container {
-    transform: scale(1.6);
-  }
-
-  .servicios-atrae-container {
-    transform: scale(1.2);
-  }
-
-  .introduccion-container {
-    transform: scale(1.2);
-  }
-
-  .slime-container > h3 {
-    transform: scale(1.2);
-  }
-
-  .esfera {
-    width: calc(100% - 320px);
-  }
-
-
-  section.active > div > div.esfera-container {
-    animation: esferaShow2 3s ease-in-out 0.5s forwards;
-  }
-
-  .contactanos {
-    height: calc(100vh - 131px);
-    margin: 0;
-  }
-
-  .contactanos-container {
-    transform: scale(1.2);
-    width: 1200px;
-  }
-
-  .cuadros-container {
-    margin-top: 60px;
-  }
-
-  .contactanos a {
-    margin-bottom: 60px;
-  }
-
-  .contactanos > div.contactanos-container > h1 {
-    margin-bottom: 40px;
-  }
-
-  .cuadro-instagram {
-    width: 260px;
-    height: 260px;
-  }
-
-  @keyframes esferaShow2 {
-    0% {
-      transform: translateY(120%) scale(0.1);
-      color: transparent;
-      background: #000000;
-    }
-    33% {
-      transform: translateY(0) scale(0.1);
-      color: transparent;
-      background: #000000;
-    }
-    66% {
-      transform: translateY(0) scale(1.7);
-      color: transparent;
-      background: #000000;
-    }
-    100% {
-      transform: translateY(0) scale(1.7);
-      color: white;
-      background: #000000;
-    }
-  }
-  
 }
